@@ -365,6 +365,15 @@ public class StreamedAudio extends AbstractAudio {
     return this.line.getLongFramePosition();
   }
 
+  /**
+   * An addition to get the status of the current audio stream
+   * and determines whether the current streamed audio is looping or not;
+   * In short it is a getter method for the loop variable.
+   * 
+   * @author Jack Meng
+   * 
+   * @return (true || false) whether the audio is looping or not
+   */
   public synchronized boolean isLooping() {
     return looping;
   }
