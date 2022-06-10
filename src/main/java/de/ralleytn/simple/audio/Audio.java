@@ -187,11 +187,11 @@ public interface Audio extends Playable {
    * @see de.ralleytn.simple.audio.AudioTimeListener
    * @author Jack Meng
    */
-  public List<AudioTimeListener> getAudioTimeListener();
+  public List<AudioTimeListener> getAudioTimeListeners();
 
-  public void addAudioTimeListener(AudioListener ... listeners);
+  public void addAudioTimeListener(AudioTimeListener ... listeners);
 
-  public void removeAudioListener(AudioListener ... listeners);
+  public void removeAudioTimeListener(AudioTimeListener ... listeners);
 
   /**
    * Loops the audio endlessly.

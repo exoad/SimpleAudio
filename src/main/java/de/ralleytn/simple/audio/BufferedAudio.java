@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
 import java.nio.file.Path;
+import java.util.List;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
@@ -317,5 +318,11 @@ public class BufferedAudio extends AbstractAudio {
 	public long getFramePosition() {
 		
 		return this.clip.getFramePosition();
+	}
+
+	@Override
+	public List<AudioTimeListener> getAudioTimeListeners() {
+		// NOT SUPPORTED
+		return null;
 	}
 }
