@@ -187,7 +187,6 @@ public interface Audio extends Playable {
 	 * @since 1.0.0
 	 */
 	default public void loop() {
-		
 		this.loop(AbstractAudio.LOOP_ENDLESS);
 	}
 }

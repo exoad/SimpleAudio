@@ -405,7 +405,6 @@ public abstract class AbstractAudio implements Audio {
 	
 	@Override
 	public void setVolume(float volume) {
-		
 		FloatControl control = (FloatControl)this.controls.get("Master Gain");
 		float min = control.getMinimum();
 		float max = control.getMaximum();
@@ -500,13 +499,11 @@ public abstract class AbstractAudio implements Audio {
 	
 	@Override
 	public List<AudioListener> getAudioListeners() {
-		
 		return this.listeners;
 	}
 	
 	@Override
 	public boolean isPaused() {
-		
 		return this.paused;
 	}
 	

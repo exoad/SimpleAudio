@@ -165,7 +165,6 @@ public class StreamedAudio extends AbstractAudio {
 			this.playing = false;
 
 			if(this.looping) {
-				
 				this.pausedWhileLooping = true;
 			}
 			
