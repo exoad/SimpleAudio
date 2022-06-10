@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libs/de.jarnbjo-1.0.0.jar",
+        "libs/javazoom-1.0.1.jar",
+        "libs/javazoom.spi-1.9.5.jar",
+        "libs/org.tritonus.share-0.3.6.jar"
+    ]
+}
