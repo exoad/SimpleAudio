@@ -76,6 +76,7 @@ public abstract class AbstractAudio implements Audio {
   protected HashMap<String, Control> controls;
   protected boolean open, paused;
   protected List<AudioListener> listeners = new ArrayList<>();
+  protected List<AudioTimeListener> timeListener = new ArrayList<>();
 
   /**
    * @param file name of the resource file
@@ -469,6 +470,25 @@ public abstract class AbstractAudio implements Audio {
   @Override
   public List<AudioListener> getAudioListeners() {
     return this.listeners;
+  }
+
+  @Override
+  public List<AudioTimeListener> getAudioTimeListeners() {
+    return this.timeListeners;
+  }
+
+  @Override
+  public void addAudioTimeListener(AudioListener ... listeners) {
+    for (AudioListener listener : listeners) {
+      this.addAudioTimeListener(listener);
+    }
+  }
+
+  @Override
+  public void removeAudioTimeListener(AudioListener ... listeners) {
+    for (AudioListener listener : listeners) {
+      this.removeAudioTimeListener(listener);
+    }
   }
 
   @Override

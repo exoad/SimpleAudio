@@ -181,6 +181,19 @@ public interface Audio extends Playable {
   public List<AudioListener> getAudioListeners();
 
   /**
+   * Represents the return value of a set of 
+   * audio time listeners for the current audio stream.
+   * @return A List representing an array of AudioTimeListener(s) 
+   * @see de.ralleytn.simple.audio.AudioTimeListener
+   * @author Jack Meng
+   */
+  public List<AudioTimeListener> getAudioTimeListener();
+
+  public void addAudioTimeListener(AudioListener ... listeners);
+
+  public void removeAudioListener(AudioListener ... listeners);
+
+  /**
    * Loops the audio endlessly.
    * @since 1.0.0
    */
